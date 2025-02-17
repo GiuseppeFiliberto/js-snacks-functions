@@ -4,7 +4,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+function takeFirstLetter(name){
+    let firstLetter = [''];
+    for (index = 0; index <=name.lenght-1; index++) {
+        return name[index].push(firstLetter)
+    }
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
