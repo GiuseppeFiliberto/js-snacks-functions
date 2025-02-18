@@ -4,14 +4,20 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-function takeFirstLetter(name){
-    let firstLetter = [''];
-    for (index = 0; index <=name.lenght-1; index++) {
-        return name[index].push(firstLetter)
+function takeFirstLetter(name) {
+    let takeFirstLetterArray = [];
+    
+    for (let i = 0; i < name.length; i++) {
+      takeFirstLetterArray.push(name[i].charAt(0).toUpperCase());
     }
-}
+    return takeFirstLetterArray;
+  }
 
 // Invoca la funzione qui e stampa il risultato in console
+
+const firstLetter = takeFirstLetter(names);
+console.log(firstLetter);
+
 
 
 
