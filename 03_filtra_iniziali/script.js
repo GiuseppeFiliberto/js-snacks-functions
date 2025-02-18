@@ -11,11 +11,13 @@ function firstLetterFilter(words, letters) {
         if(words[i].toLowerCase() === letters.toLoweCase()){
             wordsFiltrate.push(words[i]);
         }
+        return wordsFiltrate;
     }
 
 }
 // Invoca la funzione qui e stampa il risultato in console
+let firstLetter = 'A'
 
-
+const filter = firstLetterFilter(names, firstLetter);
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
