@@ -9,9 +9,33 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+function sayHi(name){
+
+    let message;
+    const now = new Date ();
+    
+    const thisHour = now.getHours();
+
+    if (thisHour < 13){
+        message = 'buon giorno';
+        
+    } else if(thisHour >= 13 && thisHour < 17) {
+
+        message = 'buona pomeriggio'
+
+    } else{
+        message = 'buona sera'
+    }
+
+    return `${message} ${name}`;
+
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+
+const greethins = sayHi(name);
+console.log(greethins);
 
 
 

@@ -6,14 +6,15 @@ const word = 'javascript';
 // Dichiara la funzione qui.
 function vowelsCounter(str) {
 
-    const vowels ='aeiouAEIOU';
-    const count = 0;
+    const vowels =['a','e','i','o','u'];
+    let count = 0;
 
     for (let i = 0; i < str.length; i++) {
-        if (vowels.includes(str[i])) {
-          count++;
-        }
-        return count
+       const thisChar = str[i];
+       if (vowels.includes(thisChar)){
+        count++
+       }
+       return count;
 }
 
 }
