@@ -4,8 +4,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+function firstLetterFilter(words, letters) {
+    let wordsFiltrate = [];
+    
+    for (let i = 0; i < words.length; i++) {
+    }
 
-
+}
 // Invoca la funzione qui e stampa il risultato in console
 
 
