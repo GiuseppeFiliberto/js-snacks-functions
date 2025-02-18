@@ -8,6 +8,9 @@ function firstLetterFilter(words, letters) {
     let wordsFiltrate = [];
     
     for (let i = 0; i < words.length; i++) {
+        if(words[i].toLowerCase() === letters.toLoweCase()){
+            wordsFiltrate.push(words[i]);
+        }
     }
 
 }
